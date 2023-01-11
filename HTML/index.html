@@ -1,26 +1,71 @@
+<!--
+This page looks so confusing.
+It would be much better to work with semantic HTML to structure this code.
+Let's fix this mess!
+(There are hints to help you out below some elements)
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>my website</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
+  <!--someone forgot to wrap the content of our webpage with an HTML element,
+  which one was it again?-->
   <body>
-    <main>
-      <h1>☠️ Hello HTML ☠️</h1>
-      <article>
-        <p>
-          i am training to become a webdev. I obviously love coding, other
-          things i like are:
-        </p>
-      </article>
-      <ul>
-        <li>Music</li>
-        <li>Food</li>
-        <li>Holidays</li>
-      </ul>
-    </main>
-    <footer></footer>
+
+        <!--Which elements could be used to link to parts of the webpage,
+    which appear below?-->
+    <div class="container">
+        <nav id ="navbar">
+            <header id = "title"><b>lisis araujo<b></header>
+            <a class = "nav-link" href ="#about-me"> About Me </a>
+            <a class = "nav-link" href="#contact"> Contacts </a>
+            <a class = "nav-link" href="#skills"> Skills </a>
+          </nav>
+      <!--Looks like the following part is the central content of our webpage.-->
+      <main>      
+          <div id="about-me">
+              <h2>About me</h2>
+             <p> Hi there! Welcome to my personal website. Here is gathered the most
+              important information about me. If you want to work with me or get
+              to know me, please don't hesitate to get in contact.</p> <br>
+          </div>
+          <!--What element could be used to combine an image with a descriptive caption?-->
+
+          <div class="image">
+              <figure>
+                  <img src="https://codingcat.codes/wp-content/uploads/2017/08/l1-1.png"
+                  alt="a random picture" style="width:75%"">
+                  <figcaption style="width: 75%">actual footage of me at home</figcaption>
+                </figure>
+          </div>
+
+        <div id="contact">
+        <h2>Contact</h2>
+          <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
+
+          <a href="https://github.com/lisisaraujo">GitHub</a>
+          <a href="https://www.linkedin.com/in/lisisaraujo/">LinkedIn</a>
+          <a href="https://open.spotify.com/">Spotify</a>
+        </div>
+
+        <div id="skills">
+          <h2>Skillset</h2>
+          <!--This part could use some bulletpoint to be more structured-->
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Making Playlists</li>
+              <li>Chilling</li>
+            </ul>
+
+          </div>
+        </div>
+  </main>
   </body>
 </html>
